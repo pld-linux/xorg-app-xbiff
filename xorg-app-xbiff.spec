@@ -11,17 +11,17 @@ Patch0:		xbiff-man.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	xorg-lib-libXaw-devel
-BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-data-xbitmaps
+BuildRequires:	xorg-lib-libXaw-devel
+BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 xbiff application.
 
 %description -l pl
-Aplikacja xbiff
+Aplikacja xbiff.
 
 %prep
 %setup -q -n xbiff-%{version}
