@@ -1,0 +1,11 @@
+--- xbiff-1.0.1/MailboxP.h.orig	2004-04-23 21:54:38.000000000 +0200
++++ xbiff-1.0.1/MailboxP.h	2006-10-15 17:21:21.778463750 +0200
+@@ -46,7 +46,7 @@
+ #define MAILBOX_DIRECTORY _PATH_MAILDIR
+ #endif
+ #elif defined(__linux__)
+-#define MAILBOX_DIRECTORY "/var/spool/mail"
++#define MAILBOX_DIRECTORY "/var/mail"
+ #endif
+ 
+ #ifndef MAILBOX_DIRECTORY
