@@ -1,5 +1,5 @@
 Summary:	xbiff application
-Summary(pl.UTF-8):   Aplikacja xbiff
+Summary(pl.UTF-8):	Aplikacja xbiff
 Name:		xorg-app-xbiff
 Version:	1.0.1
 Release:	1
