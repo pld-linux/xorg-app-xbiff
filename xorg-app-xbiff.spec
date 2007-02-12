@@ -1,5 +1,5 @@
 Summary:	xbiff application
-Summary(pl):	Aplikacja xbiff
+Summary(pl.UTF-8):   Aplikacja xbiff
 Name:		xorg-app-xbiff
 Version:	1.0.1
 Release:	1
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 xbiff application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja xbiff.
 
 %prep
