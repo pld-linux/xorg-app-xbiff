@@ -1,20 +1,20 @@
 Summary:	xbiff application - mailbox flag for X
 Summary(pl.UTF-8):	Aplikacja xbiff - flaga skrzynki pocztowej dla X
 Name:		xorg-app-xbiff
-Version:	1.0.2
+Version:	1.0.3
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xbiff-%{version}.tar.bz2
-# Source0-md5:	1d4ad06725f9dc4b877ecd210b7b1607
-Patch0:		%{name}-maildir.patch
+# Source0-md5:	f38a0c63c2a7ed6fb9d6f8884785b5c9
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-data-xbitmaps
 BuildRequires:	xorg-lib-libXaw-devel
-BuildRequires:	xorg-util-util-macros >= 1.3
+BuildRequires:	xorg-lib-libXmu-devel
+BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,14 +30,14 @@ protokoły zdalnego dostępu.
 
 %prep
 %setup -q -n xbiff-%{version}
-%patch0 -p1
 
 %build
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure
+%configure \
+	--with-mailbox-directory=/var/mail
 
 %{__make}
 
