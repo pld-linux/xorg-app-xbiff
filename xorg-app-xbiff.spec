@@ -2,7 +2,7 @@ Summary:	xbiff application - mailbox flag for X
 Summary(pl.UTF-8):	Aplikacja xbiff - flaga skrzynki pocztowej dla X
 Name:		xorg-app-xbiff
 Version:	1.0.3
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xbiff-%{version}.tar.bz2
@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog README
 %attr(755,root,root) %{_bindir}/xbiff
-%{_mandir}/man1/xbiff.1x*
+%{_mandir}/man1/xbiff.1*
